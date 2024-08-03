@@ -1,12 +1,3 @@
-**42 Pipex Project:**
-Implement a simplified version of the Unix pipe (`|`) to better understand process creation, inter-process communication, and file descriptor manipulation. The project involves writing a program that reproduces the behavior of the shell command: `cmd1 < file1 | cmd2 > file2`.
-
----
-
-### README
-
----
-
 # 42 Pipex Project
 
 ## Overview
