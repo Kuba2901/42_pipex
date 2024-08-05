@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jnenczak <jnenczak@student.42roma.it>      +#+  +:+       +#+        */
+/*   By: jnenczak <jnenczak@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/19 13:54:30 by jnenczak          #+#    #+#             */
-/*   Updated: 2024/08/01 17:51:05 by jnenczak         ###   ########.fr       */
+/*   Updated: 2024/08/05 16:20:59 by jnenczak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,7 +69,8 @@ void	do_pipe(t_pipex pipex)
 	pid_t	child1;
 	pid_t	child2;
 
-	pipe(end);
+	if (pipe(end))
+		exit(1);
 	child1 = fork();
 	if (child1 < 0)
 	{
